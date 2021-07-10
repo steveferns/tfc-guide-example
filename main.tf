@@ -1,6 +1,8 @@
 provider "aws" {
   region = var.region
-  token  = 400897
+  assume_role {
+    role_arn = "arn:aws:iam::478131081250:role/terraform-test-role"
+  }
 }
 
 data "aws_ami" "ubuntu" {
