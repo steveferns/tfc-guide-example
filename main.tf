@@ -1,6 +1,6 @@
 provider "aws" {
   region = var.region
-  token  = 472568
+  token  = 400897
 }
 
 data "aws_ami" "ubuntu" {
