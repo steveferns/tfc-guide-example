@@ -4,7 +4,7 @@ provider "aws" {
     role_arn = "arn:aws:iam::478131081250:role/ecsInstanceRole"
     
   }
-  token = 392906
+  token = 757124
 }
 
 data "aws_ami" "ubuntu" {
