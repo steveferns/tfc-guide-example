@@ -1,10 +1,5 @@
 provider "aws" {
   region = var.region
-  assume_role {
-    role_arn = "arn:aws:iam::478131081250:role/ecsInstanceRole"
-    
-  }
-  token = 757124
 }
 
 data "aws_ami" "ubuntu" {
