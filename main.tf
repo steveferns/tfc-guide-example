@@ -1,5 +1,8 @@
 provider "aws" {
   region = var.region
+    assume_role {
+    role_arn = "arn:aws:iam::355262519757:role/bea-gto-developer-iam-role"
+  }
 }
 
 data "aws_ami" "ubuntu" {
